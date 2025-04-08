@@ -1,2 +1,2 @@
-# portfolioVictor-frontend
-Repositorio do frontend do site portfolio
+#     Amiguche-frontend
+Repositorio do frontend do site Ecommerce Amiguche
