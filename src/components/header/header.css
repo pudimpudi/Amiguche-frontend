@@ -32,6 +32,13 @@ header {
     gap: 48px
 }
 
+.item_login {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(83, 46, 21);
+    font-weight: 600;
+}
+
 .nav_item a {
     text-decoration: none;
     color: rgb(83, 46, 21);

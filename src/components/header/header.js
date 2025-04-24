@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 import "./header.css";
 
@@ -18,7 +19,7 @@ function Header(){
 
                 <ul id="nav_list2">
                     <FontAwesomeIcon icon={faCartShopping} id="cart-icon" />
-                    <li className="nav_item"><a href="#Login">Login</a></li>
+                    <Link to="/login" className="item_login">Login</Link>
                 </ul>
 
                 
