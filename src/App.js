@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 /** import de componentes */
 import Header from "./components/header/header.js";
@@ -7,21 +8,32 @@ import Sobre from "./components/sections/sobre/sobremim.js";
 import Produtos from "./components/sections/produtos/produtos.js";
 import Contato from "./components/sections/contato/contato.js";
 import Footer from "./components/footer/footer.js";
+import LoginPage from "./components/pages/login/login.js";
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Home />
-        <Sobre />
-        <Produtos />
-        <Contato />
-        <Footer />
-      </main>
-    </div>
+    <Router>
+      <Routes>
+        {/* Rota da página principal com todos os componentes */}
+        <Route path="/" element={
+          <>
+            <Header />
+            <main>
+              <Home />
+              <Sobre />
+              <Produtos />
+              <Contato />
+              <Footer />
+            </main>
+          </>
+        } />
+
+        {/* Página de login separada */}
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 
